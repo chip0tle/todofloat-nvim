@@ -12,6 +12,7 @@ return {
   'chip0tle/todofloat-nvim',
   config = function()
     require('todofloat').setup { target_file = '~/Documents/md-notes/personal/todo_notes/todo.md' }
+    vim.keymap.set('n', '<leader>td', ':Td<CR>', { silent = true })
   end,
 }
 ```
